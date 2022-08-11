@@ -1,0 +1,39 @@
+{
+  "extends": "eslint:recommended",
+  "env": {
+    "node": true,
+    "es2021": true
+  },
+  "rules": {
+    "no-console": "off",
+    "prefer-const": "error",
+    "no-var": "error",
+    "no-unused-vars": "error",
+    "new-cap": "error",
+    "no-return-await": "error",
+    "require-await": "error",
+    "comma-dangle": ["error", "never"],
+    "comma-style": ["error", "last"],
+    "sort-vars": ["error", { "ignoreCase": true }],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "no-shadow": ["error", { "allow": ["err", "resolve", "reject"] }],
+    "no-use-before-define": [
+      "error",
+      {
+        "functions": false,
+        "classes": false,
+        "variables": true,
+        "allowNamedExports": false
+      }
+    ],
+    "max-lines": {
+      "max": 180,
+      "skipBlankLines": true,
+      "skipComments": true
+    },
+    "eqeqeq": ["error", "smart"],
+    "quotes": ["error", "double"],
+    "semi": ["error", "always"],
+    "yoda": "error"
+  }
+}
