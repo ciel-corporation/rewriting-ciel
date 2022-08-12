@@ -1,0 +1,8 @@
+.env
+.glitch-assets
+.glitchdotcom.json
+.replit
+.config/
+package-lock.json
+shrinkwrap.yaml
+replit.nix
