@@ -6,4 +6,4 @@ package-lock.json
 node_modules
 shrinkwrap.yaml
 replit.nix
-src/config.jsonl
+src/config.json
