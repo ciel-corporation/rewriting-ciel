@@ -2,6 +2,7 @@
 .glitch-assets
 .replit
 .config/
+.coverrage/
 package-lock.json
 node_modules
 shrinkwrap.yaml

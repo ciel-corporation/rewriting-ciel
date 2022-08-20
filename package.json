@@ -1,30 +1,35 @@
 {
-  "name": "rewriting-ciel",
-  "version": "1.1.0",
-  "description": "Ciel source code being redone",
-  "main": "src/index.js",
-  "scripts": {
-    "start": "node ./src/index.js",
-    "format": "npx prettier --write ./src",
-    "check:lint": "npx prettier --check ./src"
-  },
-  "dependencies": {
-    "axios": "^0.27.2",
-    "console-colors.js": "^1.4.0",
-    "discord.js": "^14.2.0",
-    "ciel-utils": "ciel-corporation/Ciel-Utils",
-    "common-tags": "^1.8.2"
-  },
-  "devDependencies": {
-    "eslint": "^8.21.0",
-    "prettier": "^2.7.1"
-  },
-  "engines": {
-    "node": "16.x"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ciel-corporation/rewriting-ciel.git"
-  },
-  "license": "MIT"
+	"name": "rewriting-ciel",
+	"version": "1.1.0",
+	"description": "Ciel source code being redone",
+	"main": "src/index.js",
+	"scripts": {
+		"start": "node ./src/index.js",
+		"test": "jest",
+		"format": "prettier --write ./src",
+		"lint": "eslint src --ext .js",
+		"coveralls": "cat ./coverage/lcov.info | coveralls"
+	},
+	"dependencies": {
+		"axios": "^0.27.2",
+		"ciel-utils": "ciel-corporation/Ciel-Utils",
+		"common-tags": "^1.8.2",
+		"console-colors.js": "^1.4.0",
+		"discord.js": "^14.2.0"
+	},
+	"devDependencies": {
+		"@commitlint/config-conventional": "^17.0.3",
+		"coveralls": "^3.1.1",
+		"eslint": "^8.21.0",
+		"jest": "^28.1.3",
+		"prettier": "^2.7.1"
+	},
+	"engines": {
+		"node": "16.x"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ciel-corporation/rewriting-ciel.git"
+	},
+	"license": "MIT"
 }
