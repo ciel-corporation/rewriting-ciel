@@ -1,6 +1,12 @@
-const express = require("express");
-const app = express();
+const Client = require("./bot.js");
+const config = require("./config.json");
+const { logger } = require("./utils/");
 
-app.get("/", (req, res) => res.sendStatus(200));
+(async () => {
+	const client = new Client();
+	module.exports = client;
 
-app.listen(process.env.PORT || 3000);
+	await client.login(config.botToken);
+	await require("./loaders/").loadAll(client);
+	logger.sucess("[INDEX] - The index was successfully loaded!");
+})();
