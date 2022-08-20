@@ -1,38 +1,20 @@
 {
-	"extends": "eslint:recommended",
-	"env": {
-		"node": true,
-		"es2021": true
-	},
-	"rules": {
-		"no-console": "off",
-		"prefer-const": "error",
-		"no-var": "error",
-		"no-unused-vars": "error",
-		"no-return-await": "error",
-		"require-await": "error",
-		"sort-vars": ["error", { "ignoreCase": true }],
-		"no-shadow": ["error", { "allow": ["err", "resolve", "reject"] }],
-		"no-use-before-define": [
-			"error",
-			{
-				"functions": false,
-				"classes": false,
-				"variables": true,
-				"allowNamedExports": false
-			}
-		],
-		"max-len": ["error", {
-			"code": 180,
-			"tabWidth": true,
-			"ignoreTemplateLiterals": true,
-			"ignoreUrls": true,
-			"ignoreStrings": true,
-			"ignoreRegExpLiterals": true
-		}],
-		"eqeqeq": ["error", "smart"],
-		"quotes": ["error", "double"],
-		"semi": ["error", "always"],
-		"yoda": "error"
-	}
+  "extends": "eslint:recommended",
+  "env": {
+    "node": true,
+    "jest": true,
+    "es2021": true
+  },
+  "rules": {
+    "no-console": "off",
+    "prefer-const": "error",
+    "no-var": "error",
+    "no-unused-vars": "error",
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "comma-style": ["error", "last"],
+    "no-shadow": ["error", { "allow": ["err", "resolve", "reject"] }],
+    "quotes": ["error", "double"],
+    "semi": ["error", "always"],
+    "yoda": "error"
+  }
 }
