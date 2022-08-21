@@ -15,7 +15,7 @@
 
 Before starting, you will need to have the following tools installed on your machine: [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). it's nice to have an editor to work with code like [VSCode](https://code.visualstudio.com/)
 
-### 🎲 Running the apllication
+### 🎲 Running the apllicatio
 
 ```bash
 # Clone this repository

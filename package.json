@@ -5,7 +5,6 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node ./src/index.js",
-    "format": "npx prettier --write ./src",
     "check:lint": "npx prettier --check ./src"
   },
   "dependencies": {

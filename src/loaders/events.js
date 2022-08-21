@@ -15,7 +15,7 @@ async function loadCommands(client) {
 			const { name } = path.parse(file);
 			delete require.cache[file];
 
-			if (config.disabledEvents.includes(name)) return;
+			if (config.disabledEvents.includes(name)) continue;
 
 			const event = new (require(`../events/${folder}/${file}`))();
 			const eventWithClient = event.run.bind(event, client);

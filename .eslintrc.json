@@ -13,23 +13,14 @@
 		"require-await": "error",
 		"sort-vars": ["error", { "ignoreCase": true }],
 		"no-shadow": ["error", { "allow": ["err", "resolve", "reject"] }],
-		"no-use-before-define": [
-			"error",
-			{
-				"functions": false,
-				"classes": false,
-				"variables": true,
-				"allowNamedExports": false
-			}
-		],
-		"max-len": {
+		"max-len": ["error", {
 			"code": 180,
 			"tabWidth": true,
 			"ignoreTemplateLiterals": true,
 			"ignoreUrls": true,
 			"ignoreStrings": true,
 			"ignoreRegExpLiterals": true
-		},
+		}],
 		"eqeqeq": ["error", "smart"],
 		"quotes": ["error", "double"],
 		"semi": ["error", "always"],

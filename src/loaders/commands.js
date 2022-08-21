@@ -16,11 +16,12 @@ async function loadCommands(client) {
 			const { name } = path.parse(file);
 			delete require.cache[file];
 
-			if (config.commandsDisabled.includes(name)) return;
+			if (config.commandsDisabled.includes(name)) continue;
+      
 			const command = new (require(`../commands/${folder}/${file}`))();
-
 			command.name = name;
 			command.category = folder;
+      command._path();
 
 			client.commands.set(name, command);
 			command.aliases.forEach(alias => {
