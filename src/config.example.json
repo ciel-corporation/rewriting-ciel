@@ -1,0 +1,14 @@
+{
+  "disabledEvents": ["debug"],
+  "commandsDisabled": [],
+  "prefix": "p.",
+  "ownerIds": [],
+  "colorEmbed": "",
+  "webhook": {
+    "username": "",
+    "avatarURL": "",
+    "color": "",
+    "url": ""
+  },
+  "botToken": ""
+}

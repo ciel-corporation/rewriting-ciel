@@ -22,7 +22,7 @@ class Command {
 
 	_path() {
 		this.usage = this.usage ? `${this.name} ${this.usage}` : this.name;
-		this.aliases.push(this.name);
+    this.aliases.push(this.name.toUpperCase());
 	}
 }
 

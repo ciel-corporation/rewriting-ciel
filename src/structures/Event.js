@@ -11,8 +11,8 @@ class Event {
 		const { error } = await wait(this.code(client, message, ...rest));
 		if (error) await notifier(error);
 	}
-
-	code() {}
+  
+  code() {}
 }
 
 module.exports = Event;

@@ -7,3 +7,5 @@ node_modules
 shrinkwrap.yaml
 replit.nix
 src/config.json
+config.json.save
+.config.json.swp
