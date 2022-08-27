@@ -16,6 +16,7 @@ class Bot extends Client {
 		});
 
 		this.commands = new Collection();
+    this.subCommands = new Collection();
 		this.aliases = new Collection();
 	}
 
