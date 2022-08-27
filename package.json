@@ -1,6 +1,6 @@
 {
   "name": "rewriting-ciel",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Ciel source code being redone",
   "main": "src/index.js",
   "scripts": {
@@ -9,10 +9,12 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
+    "ciel-utils": "ciel-corporation/Ciel-Utils",
+    "common-tags": "^1.8.2",
     "console-colors.js": "^1.4.0",
     "discord.js": "^14.2.0",
-    "ciel-utils": "ciel-corporation/Ciel-Utils",
-    "common-tags": "^1.8.2"
+    "dotenv": "^16.0.1",
+    "mongoose": "^6.5.1"
   },
   "devDependencies": {
     "eslint": "^8.21.0",
@@ -25,5 +27,5 @@
     "type": "git",
     "url": "git+https://github.com/ciel-corporation/rewriting-ciel.git"
   },
-  "license": "MIT"
+  "license": "Apache-2.0"
 }

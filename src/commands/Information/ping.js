@@ -7,7 +7,7 @@ class Ping extends Command {
 		this.aliases.push("pong", "ws");
 	}
 
-	async code(client, message) {
+	async code({ client, message }) {
 		await message.reply(`O meu ping é **${client.ws.ping}**ms!`);
 	}
 }
