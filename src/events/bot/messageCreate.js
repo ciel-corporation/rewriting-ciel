@@ -24,7 +24,7 @@ class MessageCreate extends Event {
     const cmdFile = client.commands.get(client.aliases.get(cmdName) || cmdName);
 
     if (cmdFile) {
-      if (cmdFile.category === "Owner" && this.config.ownerIds.includes(author.id)) return;
+      if (cmdFile.category === "Owners" && !this.config.ownerIds.includes(author.id)) return;
       await cmdFile.run({ client, message, args, user, server });
     }
   }

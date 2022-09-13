@@ -3,7 +3,9 @@
   "commandsDisabled": [],
   "prefix": "p.",
   "ownerIds": [],
+  "emojiGuildsId": [],
   "colorEmbed": "",
+  "repoLink": "ciel-corporation/Ciel",
   "webhook": {
     "username": "",
     "avatarURL": "",

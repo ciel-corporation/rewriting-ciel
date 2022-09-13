@@ -8,13 +8,15 @@
     "check:lint": "npx prettier --check ./src"
   },
   "dependencies": {
+    "appo-database": "^1.1.1",
     "axios": "^0.27.2",
     "ciel-utils": "ciel-corporation/Ciel-Utils",
     "common-tags": "^1.8.2",
     "console-colors.js": "^1.4.0",
     "discord.js": "^14.2.0",
     "dotenv": "^16.0.1",
-    "mongoose": "^6.5.1"
+    "mongoose": "^6.5.1",
+    "weather-js": "^2.0.0"
   },
   "devDependencies": {
     "eslint": "^8.21.0",

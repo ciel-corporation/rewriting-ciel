@@ -1,7 +1,7 @@
-exports.commands = require("./commands.js");
-exports.events = require("./events.js");
+exports.commandLoader = require("./commands.js");
+exports.eventLoader = require("./events.js");
 
 exports.loadAll = async client => {
-	await exports.commands(client);
-	await exports.events(client);
+	await exports.commandLoader(client);
+	await exports.eventLoader(client);
 };

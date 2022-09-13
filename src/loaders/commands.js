@@ -15,7 +15,6 @@ async function loadCommands(client) {
 
     for (const file of commands) {
       const { name } = path.parse(file);
-      delete require.cache[file];
 
       if (config.commandsDisabled.includes(name)) continue;
 
@@ -45,6 +44,8 @@ async function loadCommands(client) {
       command.aliases.forEach(alias => {
         client.aliases.set(alias, name);
       });
+
+      delete require.cache[require.resolve(`../commands/${folder}/${file}`)];
     }
   }
 

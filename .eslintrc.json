@@ -14,7 +14,7 @@
 		"sort-vars": ["error", { "ignoreCase": true }],
 		"no-shadow": ["error", { "allow": ["err", "resolve", "reject"] }],
 		"max-len": ["error", {
-			"code": 180,
+			"code": 120,
 			"tabWidth": true,
 			"ignoreTemplateLiterals": true,
 			"ignoreUrls": true,
